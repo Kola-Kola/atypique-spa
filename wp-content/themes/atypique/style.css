@@ -1,0 +1,83 @@
+/*
+ Theme Name:   Atypique SPA
+ Theme URI:    https://example.com/my-child-theme/
+ Description:  A child theme
+ Author:       Jonathan IBOR
+ Author URI:   https://example.com/
+ Template:     hello-elementor
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  my-child-theme
+*/
+
+@font-face {
+	font-family: 'LibreBaskerville';
+	src: url("/fonts/LibreBaskerville-Bold.ttf") format("ttf"),
+		 url("/fonts/LibreBaskerville-Italic.ttf") format("ttf"),
+     url("/fonts/LibreBaskerville-Regular.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cormorant';
+	src: url("/fonts/CormorantSC-Light.ttf") format("ttf"),
+		 url("/fonts/CormorantSC-Medium.ttf") format("ttf"),
+     url("/fonts/CormorantSC-Regular.ttf") format("ttf"),
+     url("/fonts/CormorantSC-SemiBold.ttf") format("ttf"),
+     url("/fonts/CormorantSC-SemiBold.ttf") format("ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  background: #000 !important;
+}
+
+#menu-navigation-1 {
+  flex-flow: column !important;
+}
+
+.container-logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo {
+  width: 80%;
+}
+
+.burger-icon {
+  cursor: pointer;
+}
+
+.burger-icon span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  color: transparent !important;
+  border: transparent !important;
+  margin: 13px 0;
+}
+
+.container-menu {
+  position: relative;
+}
+
+.menu-items {
+  min-width: 250px;
+  position: absolute;
+  background: black;
+  border: 1px solid white;
+  font-family: 'Cormorant', serif !important;
+  display: none;
+}
+
+.menu-item a {
+  color: white !important;
+  font-family: 'Cormorant', serif !important;
+}
