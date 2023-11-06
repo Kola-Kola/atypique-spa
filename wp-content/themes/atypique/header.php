@@ -35,7 +35,9 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 <div class="container-logo">
   <div>
     <?php if ( $enable_skip_link ) { ?>
+      <a alt="logo-redirection" href="/">
       <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="<?php echo esc_attr__( 'logo atypique spa', 'spa' ); ?>" />
+      </a>
     <?php } ?>
   </div>
   <div class="container-menu">
